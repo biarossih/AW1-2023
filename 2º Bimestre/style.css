@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: radial-gradient(circle, rgba(237,189,210,1) 3%, rgba(181,182,222,1) 47%, rgba(158,192,236,1) 85%, rgba(189,181,219,1) 97%);
+}
+
+main {
+    display: flex;
+    height: 93vh;
+    width: 93vw;
+    position: relative;
+    top: 3.5vh;
+    left: 3.5vw;
+    justify-content: space-around;
+}
+
+.img_side {
+    padding: 50px;
+    width: 50vw;
+    text-align: center;
+    
+}
+
+.img_side img {
+    width: 35vw;
+}
+
+.img_side h1 {
+    margin: 20px;
+    color: rgb(41, 41, 41);
+}
+
+.form_side {
+    margin-left: 20px;
+    padding: 32px;
+    width: 50vw;
+    height: 95vh;
+    background-color: rgb(41, 41, 41);
+    border-radius: 15px;
+    
+}
+
+.form_side form {
+    display: flex;
+    flex-direction: column;
+}
