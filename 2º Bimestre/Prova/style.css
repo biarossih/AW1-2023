@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #30671980;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .name{
+    text-align: center;
+    color: #306719;
+
+  }
+
+  .git{
+    text-align: right;
+  }
+
+  .icone{
+    text-align: left;
+    color: #264de4;
+    animation: moveIcon 3s infinite;
+  }
+
+  @media (max-width: 950px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+   
+  }
+  
+  @keyframes moveIcon {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(300px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #30671980;
+    border-radius: 20px;
+  }
+  
+  .animal-image {
+    width: 15vh;
+    border-radius: 20px;
+  }
+
+  .animal-image:active{
+    transform: translate(15vw, 100px) scale(3);
+  }
+
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: linear-gradient(160deg, #30671920 20%, #30671980 80%);
+  }
+  
+  @media (max-width: 950px) {
+    footer {
+      flex-direction: column;
+      
+    }
+  }
