@@ -1,232 +1,149 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-body{
-    background: rgb(155,21,222);
-    background: radial-gradient(circle, rgba(155,21,222,1) 0%, rgba(201,155,228,1) 100%);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ballet</title>
+</head>
+<body>
+    <header>
+        <h1>Ballet em Sonho</h1>
+        <nav>
+            <ul>
+                <a href="#história-div"><li>História</li></a>
+                <a href="#table-div"><li>Bailarinas</li></a>
+                <a href="#form"><li>Assinatura</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="apresentação-div">
+            <br>
+            <p>Ballet é o nome dado ao estilo de dança onde os princípios básicos são: postura ereta; uso do en dehors (rotação externa dos membros inferiores), verticalidade corporal; disciplina; leveza, harmonia e simetria. É realizada principalmente com o acompanhamento de música clássica, ao redor do mundo se adequa as diferentes culturas e sociedades para informar sua arte.
 
-header {
-    background: linear-gradient(45deg, rgb(147, 41, 203) 77%, rgba(186,141,209,1) 95%, rgba(224,191,231,1) 100%); 
-    height: 10vh;
-    display: flex;
-    font-family: 'Pacifico', cursive;
-    justify-content: space-around;
-    align-items: center;
-}
+            Quase sempre as bailarinas se apresentam com o figurino convencional branco francês, chamado tutu, sapatilha, meia calça e cabelo preso em um coque.</p>
+            <br>
+            <br>
+        </div>
+        <div id="história-div">
+            <h1>A história do Ballet</h1>
 
-header > h1 {
-    color: rgb(223, 206, 236);
-    cursor: pointer;
-}
-header > h1:hover {
-    color: #fff;
-    transform: scale(1.2);
-    transition: .5s ease-in-out;
-}
+            <br>
 
-header > nav > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            <p>O ballet clássico surgiu nas cortes italianas no século 16. O termo italiano balletto, que significa “dancinha, bailinho” deu origem a palavra francesa ballet. A dança surgiu durante o período renascentista, era apresentado em festas aristocráticas para entretenimento da nobreza. O primeiro espetáculo de ballet da história aconteceu em 1581, ele durava mais de cinco horas e era bem diferente do que conhecemos hoje: havia falas, poesia, canto e uma orquestra musical.
 
-ul > a {
-    text-decoration: none;
-    margin: 10px;
-}
+            <br>
+            <br>
 
-li {
-    list-style: none;
-    color:rgb(237, 231, 241);
-    padding: 5px;
-}
-li:hover {
-    transform: scale(1.1);
-    transition: all .5s;
-    background-color:#7111b2;
-    color: #fff;
-    border-radius: 5px;
-}
+            Passou a ganhar maior destaque no século 17 durante o reinado de Luís XIV. O rei era apaixonado pela dança, ele também era bailarino. O rei participou de um espetáculo chamado “O Ballet Noturno da Realeza” onde  fez o papel de luz fertilizando a terra, assim ganhou o apelido de Rei Sol.
 
-main {
-    padding: 0 5%;
-}
+            <br>
+            <br>
 
-main > h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 32px;
-    color: #fff;
-    text-align: center;
-}
-#apresentação-div{
-    font-family: 'Dancing Script', cursive;
-    text-align: justify;
-}
+            O ballet foi se aperfeiçoando, ficando cada vez com menos falas e mais danças. As apresentações passaram a sair dos palácios e ir para os teatros. Não somente a aristocracia tinha acesso a ele, mas os ricos em geral passaram a ter. Assim começou a surgir o teatro profissional. O rei Luís, em 1661 instalou a primeira escola de dança do mundo: Académie Royale de Danse. Ela ficava em uma das salas do Museu do Louvre. Em 1669 é fundada a Académie Royale de Musique, e Jean-Baptist Lully, o bailarino predileto do rei e que compôs diversos ballets para ele, foi nomeado diretor da escola.
 
-#história-div {
-    display: block;
-    align-items: center;
-}
+            <br>
+            <br>
 
-#história-div > h1{
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    background: linear-gradient(0deg, rgb(71, 0, 109) 40%, rgba(156,21,224,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+            A partir do século 19 o ballet passou a ter os moldes que conhecemos hoje. Nessa época as mulheres passaram a ter maior destaque e a dança “na ponta dos dedos” começou a ser explorada. Com o aperfeiçoamento da dança na sapatilha de pontas, as mulheres bailarinas ficaram mais populares que os bailarinos homens. Em 1841 foi apresentado o famoso ballet “Giselle”, que é reproduzido até os dias atuais. Em 1877 é criado o ballet La Bayadére com a primeira versão do Lago dos Cisnes, de Tchaikovsky.
 
-#história-div > p{
-    text-align: justify;
-    margin-bottom: 50px;
-    font-family: 'Handlee', cursive;
-}
-#história-div img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border: 5px solid rgb(0, 0, 0);
-    display: block;
-    cursor: pointer;
-}
-#história-div > img:hover{
-    transform: scale(1.2);
-    rotate: 360deg;
-    border: 5px solid rgba(117,15,201,1);
-    transition: 1s;
-}
+            <br>
+            <br>
 
-.bailarina-table > h1{
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    background: rgb(117,15,201);
-    background: linear-gradient(0deg, rgb(71, 0, 109) 40%, rgba(156,21,224,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+            O ballet é uma dança influente a nível mundial. É um gênero de dança muito difícil de dominar e requer muita prática e ensaios árduos. Atualmente existem outras modalidades dessa dança. Além do clássico: neoclássico, contemporâneo, balé expressionista e no Brasil surgiu até mesmo o Balé Fitness.
 
-table {
-    border-collapse: collapse; 
-    width: 90%; 
-    margin: 0 auto;
-    background: rgb(209,126,214);
-    background: linear-gradient(0deg, rgba(209,126,214,1) 31%, rgba(153,45,253,1) 100%);
-}
-table:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    box-shadow: #eee5f0;
-}
+            <br>
+            <br>
 
-th, td {
-    border: 1px solid #510881; 
-    padding: 5px; 
-}
+            Atualmente vem se tentando quebrar o tabu de ballet é coisa de menina, como se vê a dança surgiu através dos homens. As escolas oferecem turmas desde baby-class, para crianças pequenas, até turmas de ballet adulto. Ou seja, para dançar basta querer. Ainda dá tempo de correr atrás daquele seu sonho de infância!</p>
 
-th {
-    font-size: 32px;
-    font-weight: 500;
-    color: #eee5f0;
-    background-color: #510881;
-    color: #fff;
-}
+            <img src="http://www.dancaexpressao.com.br/wp-content/uploads/2015/07/ballet.jpg">
+        </div>
 
-td {
-    color: #eee5f0;
-    font-size: 28px;
-    font-weight: 500;
-    cursor: pointer;
-    }
+        
 
-tr:hover {
-    background-color: #510881;
-    transition: .5s;
-}
+        <div id="table-div" class="bailarina-table">
+            <h1>Ano em que as melhores bailarinas do mundo nasceram:</h1>
 
-.bailarina-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
-}
+            <br>
+            <br>
 
-#form h1,
-.bailarina-form h2,
-.bailarina-form p {
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-}
-    
-.bailarina-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-    
-.bailarina-form input,
-.bailarina-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-.bailarina-form input:hover {
-    transform: scale(1.05);
-    transition-duration: .5s;
-}
-.bailarina-form textarea:hover {
-    transform: scale(1.05);
-    transition-duration: .5s;
-}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Bailarina</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1879</td>
+                        <td>Agripina Yakovlevna Vaganova</td>
+                    </tr>
+                    <tr>
+                        <td>1920</td>
+                        <td>Alicia Alonso</td>
+                    </tr>
+                    <tr>
+                        <td>1957</td>
+                        <td>Ana Botafogo</td>
+                    </tr>
+                    <tr>
+                        <td>1973</td>
+                        <td>Aurélie Dupont</td>
+                    </tr>
+                    <tr>
+                        <td>1810</td>
+                        <td>Fanny Elssler</td>
+                    </tr>
+                    <tr>
+                        <td>1978</td>
+                        <td>Maria Alexandrova</td>
+                    </tr>
+                    <tr>
+                        <td>1804</td>
+                        <td>Marie Taglioni</td>
+                    </tr>
+                    <tr>
+                        <td>1986</td>
+                        <td>Natalia Osipova</td>
+                    </tr>
+                    <tr>
+                        <td>1974</td>
+                        <td>Tamara Rojo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-button {
-    width: 150px;
-    height: 50px;
-    border: 2px solid #510881;
-    border-radius: 50px;
-    color: #510881;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 20px;
-    cursor: pointer;
-}
+        <br>
+        <br>
 
-button:hover {
-    background-color: #510881;
-    color: #eee5f0;
-    font-size: 16px;
-    font-weight: 500;
-    border: 2px solid #510881;
-    border-radius: 50px;
-    transition: .5s;
-    
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(45deg, rgba(147,41,203,1) 77%, rgba(186,141,209,1) 95%, rgba(224,191,231,1) 100%); 
-    padding: 5px;
-    justify-content: center;
-    color: #eee5f0;
-    height: 10vh;
-    font-size: 20px;
-}
-
-footer a {
-    vertical-align: center;
-    color: #eee5f0;
-    text-decoration: none;
-}
-footer a:hover {
-    color: #c876ff;
-    text-decoration: none;
-    transition: .5s;
-}
+        <div id="form">
+            <p><h1>Assinatura:</h1>
+            <form class="bailarina-form"></p>
+                <h2>Assine o nosso site para sempre receber as novidades do mundo do ballet!! </h2>
+                
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            
+                <button type="submit">Enviar mensagem</button>
+            </form>       
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/biarossih" target="_blank">Beatriz Rossi</a>
+    </footer>
+</body>
+</html>
