@@ -1,26 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
-    <title>Ballet</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">Ballet em Sonho</div>
-        <input type="checkbox" id="check">
-        <label for="check" class="menu-btn">
-            <i class="fa-solid fa-bars">&#9776;</i>
-        </label>
-            <ul class="menu">
-              <li><a href="#">História</a></li>
-              <li><a href="#">Bailarinas</a></li>
-              <li><a href="#">Assinatura</a></li>
-              <li><a 
-            </ul>
-    </nav>
-</body>
-</html>
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(155,21,222);
+    background: radial-gradient(circle, rgba(155,21,222,1) 0%, rgba(201,155,228,1) 100%);
+}
+
+header {
+    background: linear-gradient(45deg, rgb(147, 41, 203) 77%, rgba(186,141,209,1) 95%, rgba(224,191,231,1) 100%); 
+    height: 10vh;
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > h1 {
+    color: rgb(223, 206, 236);
+    cursor: pointer;
+}
+header > h1:hover {
+    color: #fff;
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul > a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+    color:rgb(237, 231, 241);
+    padding: 5px;
+}
+li:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+    background-color:#7111b2;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main {
+    padding: 0 5%;
+}
+
+main > h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+#apresentação-div{
+    font-family: 'Dancing Script', cursive;
+    text-align: justify;
+}
+
+#história-div {
+    display: block;
+    align-items: center;
+}
+
+#história-div > h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(71, 0, 109) 40%, rgba(156,21,224,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#história-div > p{
+    text-align: justify;
+    margin-bottom: 50px;
+    font-family: 'Handlee', cursive;
+}
+#história-div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 5px solid rgb(0, 0, 0);
+    display: block;
+    cursor: pointer;
+}
+#história-div > img:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+    border: 5px solid rgba(117,15,201,1);
+    transition: 1s;
+}
+
+.bailarina-table > h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background: rgb(117,15,201);
+    background: linear-gradient(0deg, rgb(71, 0, 109) 40%, rgba(156,21,224,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 90%; 
+    margin: 0 auto;
+    background: rgb(209,126,214);
+    background: linear-gradient(0deg, rgba(209,126,214,1) 31%, rgba(153,45,253,1) 100%);
+}
+table:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: #eee5f0;
+}
+
+th, td {
+    border: 1px solid #510881; 
+    padding: 5px; 
+}
+
+th {
+    font-size: 32px;
+    font-weight: 500;
+    color: #eee5f0;
+    background-color: #510881;
+    color: #fff;
+}
+
+td {
+    color: #eee5f0;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    }
+
+tr:hover {
+    background-color: #510881;
+    transition: .5s;
+}
+
+.bailarina-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#form h1,
+.bailarina-form h2,
+.bailarina-form p {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+    
+.bailarina-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+    
+.bailarina-form input,
+.bailarina-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.bailarina-form input:hover {
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+.bailarina-form textarea:hover {
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #510881;
+    border-radius: 50px;
+    color: #510881;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #510881;
+    color: #eee5f0;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #510881;
+    border-radius: 50px;
+    transition: .5s;
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(147,41,203,1) 77%, rgba(186,141,209,1) 95%, rgba(224,191,231,1) 100%); 
+    padding: 5px;
+    justify-content: center;
+    color: #eee5f0;
+    height: 10vh;
+    font-size: 20px;
+}
+
+footer a {
+    vertical-align: center;
+    color: #eee5f0;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #c876ff;
+    text-decoration: none;
+    transition: .5s;
+}
