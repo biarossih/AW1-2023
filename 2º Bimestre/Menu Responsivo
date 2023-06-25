@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Ballet</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Ballet em Sonho</div>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-btn">
+            <i class="fa-solid fa-bars">&#9776;</i>
+        </label>
+            <ul class="menu">
+              <li><a href="#">História</a></li>
+              <li><a href="#">Bailarinas</a></li>
+              <li><a href="#">Assinatura</a></li>
+              <li><a 
+            </ul>
+    </nav>
+</body>
+</html>
+
+
+
+CSS:
+
+html {
+  height: 100%;
+  width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(45deg, rgba(147,41,203,1) 77%, rgba(186,141,209,1) 95%, rgba(224,191,231,1) 100%); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    nav ul {
+        display: block;
+        top: 80px;
+        right: -100%;
+        background: linear-gradient(45deg, rgba(147,41,203,1) 77%,     rgba(186,141,209,1) 95%, rgba(224,191,231,1) 100%); 
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+    }
+    #check:checked ~ ul {
+        right: 0;
+        transition: .5s;
+    }
+    
+    nav ul {
+        padding: 40%;
+    }
+    nav ul li {
+        margin: 5px 0;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a:hover, .active {
+        color: #3e054d;
+        transition: .5s;
+    }
+
+    nav .logo {
+        font-size: 30px;
+    }
+}
