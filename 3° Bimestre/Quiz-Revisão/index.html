@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Usuário</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        p {
+            color: #f37d2f;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .azul {
+            color: rgb(76, 76, 248) !important; 
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          
+            const nome = prompt("Digite seu nome:");
+            const idade = prompt("Digite sua idade:");
+    
+            const frase = `Seu nome é <span class="azul">${nome}</span> e você tem <span class="azul">${idade} </span>anos!!`;
+
+            const paragrafo = document.querySelector("p");
+            paragrafo.innerHTML = frase;
+        });
+    </script>
+</body>
+</html>
